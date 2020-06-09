@@ -1,6 +1,6 @@
 # Akanthus
 
-# <a href="#" target="_blank">Live Version</a>
+<h3> <a href="https://ripeat.github.io/Akanthus/" target="_blank">Live Version</a> </h3>
 
 A Responsive Club Website
 
