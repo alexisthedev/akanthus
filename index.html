@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Akanthus Summer Club</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
         <link href="./styles.css" type="text/css" rel="stylesheet">
@@ -11,7 +12,11 @@
     <body>
         <div class="header">
             <a href="index.html"><img src="./resources/logo.png" class="logo"></a>
-            <a href="index.html"><img src="./resources/mobile-logo.png" class="mobile-logo"></a>
+
+            <div class="container">
+                <a href="index.html"><img src="./resources/mobile-logo.png" class="mobile-logo"></a>
+            </div>
+
             <nav class="menu">
                 <ul>
                     <a href="#gallery"><li>Gallery</li></a>
@@ -56,9 +61,7 @@
                 </div>
             </div>
 
-            <div class="description">
-                <p>Join the infinite summer on social media.</p>
-            </div>
+            <div id="blank" class="description"></div>
 
             <div id="map" class="picture"></div>
 

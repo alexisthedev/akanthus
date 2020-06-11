@@ -108,6 +108,10 @@ a {
     font-size: 1.3rem;
 }
 
+#blank.description {
+    height: 3.33rem;
+}
+
 .picture #contact-us {
     position: relative;
     top: 17.5rem;
@@ -215,10 +219,11 @@ a {
 
 /* Mobile Friendly Section */
 
+.container {
+    text-align: center;
+}
+
 .mobile-logo {
-    position: absolute;
-    left: 42%;
-    top: 5%;
     height: 6.5rem;
     border: black solid 0.2rem;
     border-radius: 100%;
@@ -283,6 +288,11 @@ a {
         font-size: 2.5rem;
         margin: 0 10%;
     }
+
+    #blank.description {
+        height: 6.66rem;
+    }
+
     .picture #contact-us {
         top: 10rem;
     }
@@ -313,7 +323,7 @@ a {
         display: inline;
     }
 
-     .picture h1 {
+    .picture h1 {
          font-size: 4rem;
          line-height: 7rem;
     }
@@ -326,5 +336,48 @@ a {
         top: 0;
         left: 0;
         margin: 20% 5%;
+    }
+
+    #blank.description {
+        height: 8.33rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .picture h1 {
+        font-size: 2rem;
+    }
+    
+    .description {
+        height: 20rem;
+    }
+
+    .description p {
+        font-size: 2rem;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+    }
+
+    #blank.description {
+        height: 6.66rem;
+    }
+
+    .picture #contact-us {
+        top: 5rem;
+    }
+    .picture #contact-us a {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .description p {
+        font-size: 1.9rem;
+    }
+
+    .footer p {
+        font-size: 0.7rem;
     }
 }
