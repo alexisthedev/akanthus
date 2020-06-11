@@ -18,6 +18,7 @@ a {
     position: absolute;
     top: 5rem;
     width: 100%;
+    padding-bottom: 2.5rem;
 }
 
 /* Header Section */
@@ -34,11 +35,13 @@ a {
     position: absolute;
     height: 3rem;
     width: 11rem;
-    top: 1rem;
     left: 3rem;
-    background: url("./resources/logo.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
+    left: 5%;
+    top: 20%;
+}
+
+.header .mobile-logo {
+    display: none;
 }
 
 .header .menu {
@@ -66,9 +69,6 @@ a {
 }
 
 .header .menu #contact:hover {
-    /* color: white;
-    background: skyblue;
-    border-radius: 0.5rem; */
     color: white;
     animation: contact 0.3s ease forwards;
 }
@@ -166,8 +166,9 @@ a {
 /* Footer */
 
 .footer {
-    position: absolute;
-    top: 230rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
     width: 100%;
     height: 2.5rem;
     background-color: black;
@@ -180,6 +181,15 @@ a {
     font-size: 1rem;
     position: relative;
     top: 0.5rem;
+}
+
+.footer .footer-link {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.footer .footer-link:hover {
+    color: white;
 }
 
 /* Animations */ 
@@ -202,6 +212,20 @@ a {
         background-color: rgba(0, 35, 133, 1);
     }
 }
+
+/* Mobile Friendly Section */
+
+.mobile-logo {
+    position: absolute;
+    left: 42%;
+    top: 5%;
+    height: 6.5rem;
+    border: black solid 0.2rem;
+    border-radius: 100%;
+    padding-left: 1%;
+    
+}
+
 
 /* Breakpoints */
 
@@ -226,50 +250,81 @@ a {
     .picture #contact-us {
         top: 8.75rem;
     }
-
-    .footer {
-        top: 141rem;
-    }
 }
 
 @media only screen and (max-width: 800px) {
     .main {
-        top: 2.5rem;
+        top: 5rem;
     }
 
     .header {
-        height: 3rem;
+        height: 5rem;
     }
 
     .header .menu li {
-        margin: 0.3rem 0.8rem;
-        font-size: 1.2rem;
-    }
-
-    .header .logo {
-        height: 3rem;
-        width: 7rem;
-        top: 0.75rem;
-        left: 1rem;
+        margin: 0.7rem 0.8rem;
+        font-size: 2rem;
     }
 
     .picture {
-        height: 15rem; 
+        height: 30rem; 
     }
 
     .picture h1 {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 
+    .description {
+        height: 20rem;
+    }
+
+    .description p {
+        top: 5rem;
+        font-size: 2.5rem;
+        margin: 0 10%;
+    }
     .picture #contact-us {
-        top: 7rem;
+        top: 10rem;
     }
 
     .picture #contact-us a {
-        font-size: 1rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .main {
+        top: 7rem;
+    }
+    
+    .header {
+        height: 7rem;
     }
 
-    .footer {
-        top: 126rem;
+    .header .menu li {
+        display: none;
+    }
+
+    .header .logo {
+        display: none;
+    }
+
+    .header .mobile-logo {
+        display: inline;
+    }
+
+     .picture h1 {
+         font-size: 4rem;
+         line-height: 7rem;
+    }
+
+    .description {
+        height: 25rem;
+    }
+
+    .description p {
+        top: 0;
+        left: 0;
+        margin: 20% 5%;
     }
 }
